@@ -4,25 +4,30 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <title>Pokemon!</title>
 </head>
 <body>
-  <h1 id="logo">Pokemon!</h1>
+
+  <header>
+    <img src="./images/pokemon.svg.png" alt="Pokemon Logo">
+    <h1 id="logo">Pokemon!</a></h1>
+    <p>Refresh the page to return to full list</p>
+  </header>
+
+  <form>
+    <label for="Poke-DropDown"></label>
+    <select id="Poke-DropDown">
+      <option disabled selected value> -- select an option -- </option>
+      <!-- Dynamic options added in here -->
+    </select>
+    <input type="button" id="clear-filter-list-views" value="Clear Filter">
+  </form>
+
   <div id="wrapper">
-    <div>
-      <form>
-        <label for="Poke-DropDown"></label>
-        <select id="Poke-DropDown">
-          <option disabled selected value> -- select an option -- </option>
-          <!-- Dynamic options added in here -->
-        </select>
-        <input type="button" id="clear-filter-list-views" value="Clear Filter">
-      </form>
-    </div>
 
     <div id="Poke-List">
-      Pokemons are listed below:
-
+      <!-- Full and filtered list of pokemons shown here. -->
     </div>
   </div>
 </body>

@@ -1,0 +1,58 @@
+header {
+  background-color: #b48484;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 150px;
+  right: 0px;
+  overflow: hidden;
+}
+
+img {
+  width: 25%;
+  height: auto;
+  margin: 10px;
+}
+
+body {
+  font-family: "Open Sans";
+  margin: 10px;
+}
+
+#wrapper {
+  font-family: Open Sans;
+  position: absolute;
+  top: 180px;
+  left: 0px;
+  right: 0px;
+  overflow: auto;
+}
+
+header{
+  color: white;
+  text-decoration: underline;
+  text-transform: none;
+  font-size: 42px;
+  font-weight: 700;
+  position: absolute;
+}
+
+form {
+  position: absolute;
+  top: 160px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding-top: 15px;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  padding: 5px;
+  background: #E93C2C;
+}

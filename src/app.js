@@ -5,13 +5,6 @@ const PokemonInfoView = require('./views/pokemon_info_view')
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const handleClear = function(){
-    pokemonListView.clearDiv();
-  }
-
-  const clearButton = document.querySelector('#clear-filter-list-views')
-  clearButton.addEventListener('click', handleClear)
-
   const displayFullPokeList = document.querySelector('#Poke-List')
   const pokemonListView = new PokemonListView(displayFullPokeList);
   pokemonListView.bindEvents();
@@ -24,9 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterView = new FilterView(selectDropDown);
   filterView.bindEvents();
 
+  const clearButton = document.querySelector('#clear-filter-list-views')
+  clearButton.addEventListener('submit', pokemonListView.bindEvents)
+  // Button is not working the way I expect it to.
+
   const pokemon = new Pokemon();
   pokemon.bindEvents();
-
 
 
 });
