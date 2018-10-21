@@ -3,9 +3,19 @@ header {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 150px;
+  height: 220px;
   right: 0px;
   overflow: hidden;
+}
+
+#subtitle   {
+  font-size: 12px;
+  bottom: 20px;
+  margin-left: 10px;
+}
+
+h2 {
+  margin-left: 10px;
 }
 
 img {
@@ -22,24 +32,15 @@ body {
 #wrapper {
   font-family: Open Sans;
   position: absolute;
-  top: 180px;
+  top: 220px;
   left: 0px;
   right: 0px;
   overflow: auto;
 }
 
-header{
-  color: white;
-  text-decoration: underline;
-  text-transform: none;
-  font-size: 42px;
-  font-weight: 700;
-  position: absolute;
-}
-
 form {
   position: absolute;
-  top: 160px;
+  top: 180px;
 }
 
 ul {
