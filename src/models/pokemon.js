@@ -47,10 +47,10 @@ Pokemon.prototype.findSelectedTypes = function(index){
   url = `https://pokeapi.co/api/v2/type/${index}`
   const request = new Request(url)
   request.get().then((data) => {
-    PubSub.publish('Pokemon:Selected-Type', data.pokemon)
-    console.log(data.pokemon)
+    PubSub.publish('Pokemon:Selected-Type', data)
   });
 }
+
 
 
 module.exports = Pokemon;

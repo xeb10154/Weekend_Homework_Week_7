@@ -26,5 +26,4 @@ const handleChangeType = function(event){
   const typeIndex = event.target.value
   PubSub.publish('FilterView:TypeIndex', typeIndex)
 }
-
 module.exports = FilterView;

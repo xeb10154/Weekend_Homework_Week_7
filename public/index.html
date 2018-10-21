@@ -8,16 +8,22 @@
 </head>
 <body>
   <h1 id="logo">Pokemon!</h1>
-  <div>
-    <label for="Poke-DropDown"></label>
-    <select id="Poke-DropDown">
-      <!-- Dynamic options added in here -->
-    </select>
-  </div>
+  <div id="wrapper">
+    <div>
+      <form>
+        <label for="Poke-DropDown"></label>
+        <select id="Poke-DropDown">
+          <option disabled selected value> -- select an option -- </option>
+          <!-- Dynamic options added in here -->
+        </select>
+        <input type="button" id="clear-filter-list-views" value="Clear Filter">
+      </form>
+    </div>
 
-  <div id="Poke-List">
-    Pokemons are listed below:
+    <div id="Poke-List">
+      Pokemons are listed below:
 
+    </div>
   </div>
 </body>
 </html>
