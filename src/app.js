@@ -17,12 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterView = new FilterView(selectDropDown);
   filterView.bindEvents();
 
-  const clearButton = document.querySelector('#clear-filter-list-views')
-  clearButton.addEventListener('submit', pokemonListView.bindEvents)
-  // Button is not working the way I expect it to.
 
   const pokemon = new Pokemon();
   pokemon.bindEvents();
+
+  const clearButton = document.querySelector('#clear-filter-list-views')
+  clearButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    console.log('clicked')
+  })
+  // Button is not working the way I expect it to.
+
 
 
 });

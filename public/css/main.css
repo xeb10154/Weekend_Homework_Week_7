@@ -38,7 +38,7 @@ body {
   overflow: auto;
 }
 
-form {
+#buttons-div {
   position: absolute;
   top: 180px;
 }

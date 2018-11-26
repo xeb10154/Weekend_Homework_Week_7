@@ -19,7 +19,7 @@ Pokemon.prototype.bindEvents = function(){
 }
 
 Pokemon.prototype.getData = function(){
-  url = `https://pokeapi.co/api/v2/pokemon`;
+  url = `https://pokeapi.co/api/v2/pokemon/`;
   const request = new Request(url);
   request.get().then((data) => {
     this.data = data.results
@@ -28,7 +28,7 @@ Pokemon.prototype.getData = function(){
 }
 
 Pokemon.prototype.findPokemonInfo = function(index){
-  url =  `https://pokeapi.co/api/v2/pokemon/${index}`
+  url =  `https://pokeapi.co/api/v2/pokemon/${index}/`
   const request = new Request(url)
   request.get().then((data) => {
     PubSub.publish('Pokemon:Selected-Pokemon', data)
@@ -44,7 +44,7 @@ Pokemon.prototype.getTypes = function(){
 }
 
 Pokemon.prototype.findSelectedTypes = function(index){
-  url = `https://pokeapi.co/api/v2/type/${index}`
+  url = `https://pokeapi.co/api/v2/type/${index}/`
   const request = new Request(url)
   request.get().then((data) => {
     PubSub.publish('Pokemon:Selected-Type', data)
