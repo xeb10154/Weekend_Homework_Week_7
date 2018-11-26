@@ -57,3 +57,7 @@ li {
   padding: 5px;
   background: #E93C2C;
 }
+
+li:hover {
+  background: #f18076;
+}
