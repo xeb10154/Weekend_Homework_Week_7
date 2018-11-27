@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearButton = document.querySelector('#clear-filter-list-views')
   clearButton.addEventListener('click', (event) => {
     event.preventDefault();
-    console.log('clicked')
+    console.log('clicked');
+    const selectDropDown = document.querySelector('#Poke-DropDown')
+    selectDropDown.selectedIndex = 0; // Reset drop-down menu
+
+    pokemon.bindEvents();
   })
   // Button is not working the way I expect it to.
 

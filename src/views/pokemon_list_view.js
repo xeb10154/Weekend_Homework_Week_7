@@ -16,6 +16,7 @@ PokemonListView.prototype.bindEvents = function(){
 }
 
 PokemonListView.prototype.renderList = function(allPokemons){
+  this.listDiv.innerHTML = "";
   const headingType = document.createElement('h2');
   headingType.textContent = `All ${allPokemons.length} Pokemons!`
   this.listDiv.appendChild(headingType)
